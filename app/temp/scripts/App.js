@@ -74,7 +74,7 @@
 	  _createClass(Adult, [{
 	    key: 'payTaxes',
 	    value: function payTaxes() {
-	      console.log(this.name + " now owes $0 in taxes.");
+	      console.log(this.name + ' now owes $0 in taxes');
 	    }
 	  }]);
 
