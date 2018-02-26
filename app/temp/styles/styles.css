@@ -1301,3 +1301,56 @@ Instead edit gulp/templates/sprite */
   opacity: 1;
   transform: scale(1);
 }
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255,255,255,.94);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.modal__description {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.60;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons__icon {
+  background-color: #d59541;
+  display: inline-block;
+  width: 33%;
+  height: 72px;
+  position: relative;
+  margin: 0 5px 5px 5px;
+}
+
+@media (min-width: 530px) {
+
+  .social-icons__icon {
+    width: 72px;
+  }
+
+  .social-icons__icon:not(:last-of-type) {
+    margin-right: 5px;
+  }
+}
+
+.social-icons__icon .icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
